@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test" parallel="tests" thread-count="1">
+  		<parameter name="Browser" value="chrome"/>		
+		<parameter name="Driver" value="src\test\resources\selenium_standalone_binaries\windows\googlechrome\64bit\chromedriver.exe"/>
+    <class name="com.qa.web.tests.SearchEngineTest"/>
+  	<class name="com.qa.web.tests.DuckDuckGoTest"/>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
